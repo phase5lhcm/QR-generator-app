@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.venv/
+
+# Docker
+*.tar
+.env
+
+# VSCode or IDEs
+.vscode/
+*.code-workspace
+.idea/
+
+# Output directories
+output/
+qr_codes/
+
+# System files
+.DS_Store
+Thumbs.db
