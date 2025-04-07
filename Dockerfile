@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pip install qrcode[pil] python-dotenv
+RUN pip install -r requirements.txt
 
 # Run the QR generator
 CMD ["python", "main.py"]
