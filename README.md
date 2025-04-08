@@ -11,5 +11,5 @@ This app uses Docker to generate a customizable QR code
 This image shows the logs of the container successfully generating the QR code.
 
 ##  Screenshot of image in Docker Hub
-![Docker Hub]!(dockerhub_confirmation.png)
+![Docker Hub](image.png)
 This image is a confirmation of the image having been built and published to Docker Hub
