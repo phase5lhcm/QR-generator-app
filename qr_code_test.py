@@ -1,7 +1,5 @@
 import os
 
-import pytest
-
 
 def test_qr_code_file_creation():
     qr_dir = os.getenv("QR_CODE_DIR", "qr_codes")
