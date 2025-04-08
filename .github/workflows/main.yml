@@ -32,10 +32,15 @@ jobs:
           docker run --rm ${{ secrets.DOCKER_USERNAME }}/qr-generator:latest \
           flake8 . --exclude=venv,__pycache__
 
+      - name: Generate QR code (required for test)
+        run: |
+          docker run --rm -v ${{ github.workspace }}/qr_codes:/app/qr_codes \
+          ${{ secrets.DOCKER_USERNAME }}/qr-generator:latest python main.py
+
       - name: Run tests inside Docker container
         run: |
-          docker run --rm ${{ secrets.DOCKER_USERNAME }}/qr-generator:latest \
-          pytest
+          docker run --rm -v ${{ github.workspace }}/qr_codes:/app/qr_codes \
+          ${{ secrets.DOCKER_USERNAME }}/qr-generator:latest pytest
 
       - name: Push Docker image to DockerHub
         run: |
