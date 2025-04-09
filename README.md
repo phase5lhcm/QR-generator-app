@@ -4,7 +4,7 @@ This app uses Docker to generate a customizable QR code
 
 ##Checkout my Github using the QR code below!
 
-![My GitHub QR Code](qr_codes/exampleQR.png)
+![My GitHub QR Code](image-1.png)
 
 ##  Screenshot of Docker logs:
 ![QR log](docker_confirmation.png)
